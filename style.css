@@ -1,0 +1,204 @@
+body {
+    background-color: #f2c57c;
+    margin: 0px;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddae7e;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 30px 10%;
+    min-height: calc(100vh - 190px);
+
+    box-sizing: border-box;
+}
+
+.main .btn {
+    text-align: center;
+}
+
+.btn > button {
+    border: none;
+    background-color: #f2c57c;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ADD BOOK FORM */
+
+.showAddBookWrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0px;
+
+    height: 100vh;
+    width: 100vw;
+
+    backdrop-filter: blur(5px);
+}
+
+.hideAddBookWrapper {
+    display: none;
+}
+
+.addBookForm {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    background-color: #ddae7e;
+}
+
+.addBookForm p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#formID > div {
+    height: 500px;
+    width: 400px;
+
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+#formID > div > form {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+#formID > div > form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 20px;
+}
+
+#formID > div > form > div > input {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+#formID > div > form > .label4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#formID > div > form > .label4 > select {
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+#formID > div > form > #buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#formID > div > form > #buttons > button {
+    flex: 1;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cancel {
+    background-color: #ef6f6c;
+}
+
+.submit {
+    background-color: #7fb685;
+}
+
+/* CARDS */ 
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    height: 300px;
+    width: 300px;
+    
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #f4f0bb;
+}
+
+.card p {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.card button {
+    align-self: stretch;
+    
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* FOTTER */
+
+.foter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    height: 70px;
+    background-color: #ddae7e;
+}
+
+.foter > img {
+    height: 50px;
+    width: 50px;
+}
+
+.foter > a {
+    text-decoration-line: none;
+    font-size: 20px;
+    color: black;
+}

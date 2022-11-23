@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>My Library 📘</h1>        
+    </div>
+    <div class="main">
+        <div class="btn">
+            <button class="addBook">+ Add book</button>
+        </div>
+        <div class="cards">
+
+        </div>
+    </div>
+    <div class="foter">
+        <img src="/assets/github (1).png" alt="github-icon">
+        <a href="https://github.com/spoljoooooo">@spoljooooo</a>
+    </div>
+    <div id="formID" class="hideAddBookWrapper">
+        <div class="addBookForm">
+            <form action="#">
+                <div>
+                    <p>Add book:</p>
+                </div>
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" autocomplete="off" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" autocomplete="off" required pattern="(?!^\d+$)^.+$">
+                </div>
+                <div>
+                    <label for="pages">Pages:</label>
+                    <input type="text" id="pages" autocomplete="off" required pattern="^[0-9]*$">
+                </div>
+                <div class="label4">
+                    <label for="read">Did you read it:</label>
+                    <select id="read">
+                        <option value="Read">Yes</option>
+                        <option value="Not read">No</option>
+                    </select>
+                </div>
+                <div id="buttons">
+                    <button type="button" class="cancel">Cancel</button>
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
